@@ -3,15 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'videojgos',
-    template:  `
-    <h2>{{nome}}</h2>
-    <h3 *ngIf="mostraRetro !=true">Melhor Jogo: {{melhorJogo}}</h3>
-    <h3 [style.background]="color" *ngIf="mostraRetro ==true">Melhor Jogo: {{melhorJogoRetro}}</h3>
-    <h2>Lista de jogos</h2>
-    <ul>    
-        <li *ngFor="let game of videoJogos">{{game}}</li>
-    </ul>
-    `
+    templateUrl:'./video-jogos.componentes.html'
 })
 
 export class VideoJogosComponent{
