@@ -1,7 +1,9 @@
 <h2>{{nome}}</h2>
 <h3 *ngIf="mostraRetro !=true">Melhor Jogo: {{melhorJogo}}</h3>
 <h3 [style.background]="color" *ngIf="mostraRetro ==true">Melhor Jogo: {{melhorJogoRetro}}</h3>
-<h2>Lista de jogos</h2>
+<h2 [ngStyle]="tituloLista">Lista de jogos</h2>
 <ul>
     <li *ngFor="let game of videoJogos">{{game}}</li>
 </ul>
+<p>{{retorno}}</p>
+<button (click)="exibir($event)">Mouse Evento</button>
