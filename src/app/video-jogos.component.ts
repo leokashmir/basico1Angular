@@ -7,15 +7,23 @@ import { Component } from '@angular/core';
 })
 
 export class VideoJogosComponent{
-    public nome = 'Video-Jogos'
-    public melhorJogo = 'COD WII';
-    public melhorJogoRetro = 'Mario Bros Nintendo 8-bits';
-    public mostraRetro = true;
-    public color = "red";
-    public videoJogos= [
-        'COD I',
-        'GTA',
-        'STAR TREK',
-        'FIFA 2018'
-    ]
+    public nome:string ;
+    public melhorJogo:string;
+    public melhorJogoRetro:string ;
+    public mostraRetro:boolean ;
+    public color:string ;
+    public videoJogos:Array<string>;
+    public ano:number;
+
+
+    constructor(){
+        this.nome = 'Video-Jogos';
+        this.melhorJogo = 'COD WII';
+        this.melhorJogoRetro = 'Mario Bros Nintendo 8-bits';
+        this.mostraRetro = true;
+        this.color = "red";
+        this.ano = 2018;
+        this.videoJogos = ['COD II','GTA','STAR TREK','FIFA 2018'];
+
+    }
 }
